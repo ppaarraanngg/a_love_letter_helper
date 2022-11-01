@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>a love letter helper</title>
+  <style>
+    @font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    *{ 
+      font-size: 0.98em;
+      background-color: rgb(0, 0, 0);
+      color: black;
+      font-family: 'MapoFlowerIsland';
+    }
+    body{
+      word-break: keep-all;
+      margin: 20px;
+      display: flex;
+    }
+
+    button{
+      outline: none;
+      border: none;
+      background-color: #888;
+    }
+    .mainT{
+
+      text-align: left;
+      line-height:1.5;
+      display: flex;
+      background-color: rgb(0, 0, 0);
+      margin-top: 10px;
+      /* under col */
+      color: rgb(20, 20, 20);
+    }
+
+    .mainSet{
+      background-color: rgb(0, 0, 0);
+      height: 900px;
+      width: 200px;
+    }
+    .middleT{
+      display: flex;
+      display: none;
+      background-color: rgb(232, 102, 102);
+    }
+
+    .middleSet{
+      
+      background-color: blue;
+      height: 900px;
+      
+    }
+    .endT{
+      color: #ffff;
+      line-height:1.5;
+      display: flex;
+      display: none;
+      color: rgb(20, 20, 20);
+    }
+
+    .endSet{
+      display: flex;
+      width: 600px;
+      height: 900px;
+    }
+
+
+    .effectSet{
+       padding-left:100px ;
+    }
+
+
+  .effect{
+    background-color: black;
+    color: rgb(20, 20, 20);
+  }
+
+  .ef1{
+
+  }
+
+  .show{
+    color: rgb(255, 255, 255);
+    display: none;
+  }
+    
+
+
+
+
+
+  /* hover */
+
+  .effect:hover{
+    opacity: 0;
+    /* transition-duration: 1s; */
+    
+  }
+  </style>
+</head>
+
+
+<body>
+<div class="mainSet">
+  <!-- 메인 1 -->
+<button class="mainT" onclick="end1()">프란츠 카프카가<br>펠리체 바우어에게</button>
+<button  class="mainT" onclick="end2()">익명으로<br>윤도에게</button>
+<button  class="mainT" onclick="end3()">토마스 후드가<br>아내에게</button>
+<button  class="mainT" onclick="end4()">클라이스트가<br>헨리에타 보겔에게</button>
+<button  class="mainT" onclick="end5()">단한이<br>당신에게</button>
+<button  class="mainT" onclick="end6()">진욱이<br>연인에게</button>
+</div>
+
+<!-- <div class="middleSet">
+<button class="middleT middle1" onclick="end1()">'펠리체 바우어'에게 <br> '윤도'에게 <br>'아내'에게 <br>'헨리에타 보겔'에게<br>'당신'에게<br>'연인'에게 </button>
+<button  class="middleT middle2">'펠리체 바우어'에게 <br> '윤도'에게 <br>'아내'에게 <br>'헨리에타 보겔'에게<br>'당신'에게<br>'연인'에게 </button>
+<button  class="middleT middle3">'펠리체 바우어'에게 <br> '윤도'에게 <br>'아내'에게 <br>'헨리에타 보겔'에게<br>'당신'에게<br>'연인'에게 </button>
+<button  class="middleT middle4">'펠리체 바우어'에게 <br> '윤도'에게 <br>'아내'에게 <br>'헨리에타 보겔'에게<br>'당신'에게<br>'연인'에게 </button>
+<button  class="middleT middle5">'펠리체 바우어'에게 <br> '윤도'에게 <br>'아내'에게 <br>'헨리에타 보겔'에게<br>'당신'에게<br>'연인'에게 </button>
+<button  class="middleT middle6">'펠리체 바우어'에게 <br> '윤도'에게 <br>'아내'에게 <br>'헨리에타 보겔'에게<br>'당신'에게<br>'연인'에게 </button>
+</div> -->
+
+<div class="endSet">
+  <div class="endT end1">사랑하는 이여, 어젯밤 나는 잠자는 내내 당신의 꿈을 꾼 것이 분명합니다. 
+    하지만 지금 기억 속에는 오직 두 가지 꿈만이 남아 있군요. 
+    나는 잠에서 깨자마자, 사실은 너무도 그러기 힘들었음에도 불구하고 꿈을 잊으려 안간힘을 썼습니다. 
+    왜냐하면 꿈의 내용은 참혹한 진실을 적나라하게 눈앞에 강제로 들이미는 것인데, 
+    삭막하고 무감각한 현실의 삶에서 느끼는 것과는 비교할 수 없을 정도로 집요하고도 과도한 기세로 나타났으니까요. 
+    복잡하게 엉킨 꿈은 아직도 내 안에서 아주 세세한 장면까지 생생하게 살아 있으면서 나를 위협하긴 하지만, 
+    당신에게는 짧고도 피상적으로만 설명해 드리겠습니다. 
+    첫 번째 꿈은, 당신의 사무실에서는 곧바로 전보를 보낼 수 있다고 했던 당신의 말과 연관되어 있습니다. 꿈속에서 나는 내 방에서 직접 전보를 보낼 수 있었고, 
+    심지어 전심기가 내 침대 곁에 놓여 있었지요. 당신이 탁자를 침대 곁으로 옮겨놓곤 하는 상황과 유사합니다. 
+    전신기는 유난히 뾰족한 가시 같은 모양새였으므로, 
+    원래 전보 자체에 공포심을 갖고 있는 나는 그 기기로 전보를 보낼 일이 두려웠습니다. 
+    하지만 왠지 모르게 당신을 걱정하는 마음에 짓눌리고 또한 당신으로부터 당장 소식을 듣고 싶다는 욕망이 나를 침대에서 나오게 만들 정도였으므로,
+    어떻게든 나는 당신에게 전보를 보내야만 했지요. 
+    다행히도 그 순간에 내 방에 있던 가장 어린 여동생이 나를 대신해 전보를 보내기 시작했습니다.
+    <div onclick="effect1()" class="effect ef1">당신에 대한 걱정으로 인해 내 상상력은 마구 부풀어 올랐습니다. </div>
+    유감스럽게도 꿈속에서뿐이지만요.(…)</div>
+
+  <div class="endT end2">꽤 오래전부터 너를 좋아해왔어.
+    나는 나 자신이 누구인지, 무엇이 될 수 있는지 잘 모르지만 이거 하나만은 확신하고 있어.
+    세상 그 누구보다 너에 대해서 자주 생각한다는 것.
+    자주 생각한다는 게 애정의 크기를 의미하는 것인지는 모르겠지만 어쨌든 시간의 총량을 따지자면 그렇다는 말이야.
+    나는 내게 주어진, 내가 가능한 삶이 무엇인지 가늠해보는 습관이 있어.
+    <div onclick="effect2()" class="effect ef2">그 속에는 항상 네가 있어.</div> 바보같이.</div>
+  <div class="endT end3">
+    나의 소중하고 가장 사랑하는 이여, 나는 정말로 당신이 곧 올 수 있기 바랍니다,
+    그리고 그 동안에 당신이 진행하는 일에 편리를 도모하는데 내가 생각해 낼 수 있는 모든 일을 할 겁니다.
+    오늘 당신의 환영을 보고, 당신이 내게 기대고 있는 것처럼 느끼면서, 
+    푸른 산과 포도밭에 둘러싸인 모젤을 바라보았어요.
+    나는 당신과 비둘기 한 쌍을 내 곁에 두고 일할 수 있게 되기를 고대하고 있어요,
+    그때가 되면 지난 일 때문에 한숨짓는 일은 없을 거요.
+    마음을 굳건히 하세요.
+    아직은 행복한 미래가 남아 있어요. 그리고 가장 사랑하고 소중한 이여,
+    우리의 만남을 고대하세요.
+    아늑하기는 해도 작은 집이 우리를 기쁘게 맞아 줄 것입니다.
+    그리고 영국에 기나긴 밤을 잘 지내라는 인사는 하지 맙시다.
+    잘 자요,<div onclick="effect3()" class="effect ef3"> 나의 소중한 아내, 나의 자랑이며 내게 위안을 주는 이여.</div></div>
+  <div class="endT end4">내 귀여운 헨리에타, <div onclick="effect4()" class="effect ef4">내 작은 영혼</div>, 내 사랑, 내 작은 비둘기, 내 아내, 내 부드러운 아기, 내 인생의 빛, 나의 모든 것, 
+    내 물건, 나의 노예, 나의 성(城), 나의 경작지, 나의 잔디, 나의 포도밭, 내 인생의 태양, 나의 별, 나의 하늘과 땅, 나의 과거와 미래, 나의 신부, 
+    나의 소녀, 나의 사랑하는 친구, 나의 내적인 존재, 나의 심장, 나의 내장, <div onclick="effect5()" class="effect ef5">내 눈의 별</div>, 가장 사랑스러운 존재여, 도대체 당신을 무엇이라 불러야 할까요?
+    나의 소중한 아기, 나의 진주, 나의 보석, 나의 왕관, 나의 여왕, 나의 황후여. 
+    내 마음의 사랑, 나의 가장 높고 귀중한 존재, 나의 모든 것, 나의 아내, 나의 결혼, 내 아이들의 세례, 나의 비극, 나의 사후 평판이여.
+    아! 당신은 나의 반쪽, 나의 도덕, 나의 장점, 나의 희망, 내 죄의 용서, 나의 미래, 나의 거룩함, 하느님의 어린 딸, 신의 아이, 나의 선지자, 나의 수호천사, 나의 케루빔, 나의 세라핌이여.
+    아, 나는 얼마나 당신을 사랑하는지!</div>
+
+  <div class="endT end5">
+
+    오전 햇살 아래의 네가 참 아름답다는
+    그런 당연한 말도 참지 못하는 나는
+    당신이 울 때 어쩔 줄 모르겠다
+    
+    네가 필요한 거 내가 다 가져다줄게
+    네가 필요한 말 내가 다 말해줄게
+    별도 달도 다 따줄 테니 울지 마
+    따위의 말은 도움이 되지 않는단 걸 알지만
+    
+    그러다가 문득 떠올리기도하는 것이다
+    네가 좋아하는 골목길 초입의 떡볶이집이나
+    차트 위의 신나는 노래들을
+    
+    그래도 그대는 자꾸 화가 난다고 한다
+    그 이유는 어른들이 너무 못된 것 같다고
+    그래서 나에게 이런 짓들을 하는 것 같다고
+    자기가 어른이 되면 이렇게까지 하지는 않을 거라며
+    몇 번이고 몇 번이고
+    
+    내가 너를 사랑한다는 것만으로는 이유가 충분치 않다
+    사랑을 설명하고 설득하는 일이 가끔은 내게도 벅차
+    나는 우는 네가 안쓰러워서 까슬한 뒷머리를
+    쓰다듬어 보는데
+    
+    그대야 그럼에도 잊지 마
+    우리는 빛을 향해 가고 있어!
+    <div onclick="effect6()" class="effect ef6"> 우리에게 만약 그날이 온다면… 나는 너랑 결혼할 테야 </div>
+    
+    그러니까 오늘 나는
+    저 하늘 위의 태양을 따다 주기로 결심한다
+    가끔은 주저앉아 울기도 하는 당신에게</div>
+  <div class="endT end6">사랑하는 그대에게
+
+    당신 앞에서는 내가 너무 작아 보여요.
+    당신의 외모, 몸짓, 행동, 말투 모든 게 나의 세계를 지배하고 감싸줘요.
+    그대 없는 삶이 어땠는지 기억도 잘 나지 않아요.
+    
+    눈을 감고 사랑 노래를 들을 때면 당신이 떠올라 행복하고,눈을 감고 이별 노래를 들을 때면 당신을 보지 못할까, 슬픔이 나를 덮쳐요.
+    당신과 함께 미래를 살고 싶어요.
+    
+    당신을 향한 내 마음은 이 짧은 글에 담긴 작은 글자들로 표현할 수 없어요.
+    <div onclick="effect7()" class="effect ef7"> 지금 당장 당신을 보고 싶어요. </div>
+    
+    진욱</div>
+</div>
+
+<div class="effectSet">
+  <div class="show sh1">당신에 대한 걱정으로 인해 내 상상력은 마구 부풀어 올랐습니다. </div>
+  <div class="show sh2">그 속에는 항상 네가 있어. </div>
+  <div class="show sh3">나의 소중한 아내, 나의 자랑이며 내게 위안을 주는 이여.</div>
+  <div class="show sh4">내 작은 영혼 </div>
+  <div class="show sh5">내 눈의 별 </div>
+  <div class="show sh6">우리에게 만약 그날이 온다면… 나는 너랑 결혼할 테야</div>
+  <div class="show sh7"> 지금 당장 당신을 보고 싶어요. </div>
+</div>
+  
+  
+
+
+
+
+  <script>
+
+function effect1(){
+  const sh1 = document.querySelector('.sh1');
+  if(sh1.style.display !== 'none') {
+    sh1.style.display = 'none';
+  }
+  else {
+    sh1.style.display = 'block';
+  }
+}
+
+
+function effect2(){
+  const sh2 = document.querySelector('.sh2');
+  if(sh2.style.display !== 'none') {
+    sh2.style.display = 'none';
+  }
+  else {
+    sh2.style.display = 'block';
+  }
+}
+
+
+function effect3(){
+  const sh3 = document.querySelector('.sh3');
+  if(sh3.style.display !== 'none') {
+    sh3.style.display = 'none';
+  }
+  else {
+    sh3.style.display = 'block';
+  }
+}
+
+function effect4(){
+  const sh4 = document.querySelector('.sh4');
+  if(sh4.style.display !== 'none') {
+    sh4.style.display = 'none';
+  }
+  else {
+    sh4.style.display = 'block';
+  }
+}
+
+function effect5(){
+  const sh5 = document.querySelector('.sh5');
+  if(sh5.style.display !== 'none') {
+    sh5.style.display = 'none';
+  }
+  else {
+    sh5.style.display = 'block';
+  }
+}
+
+function effect6(){
+  const sh6 = document.querySelector('.sh6');
+  if(sh6.style.display !== 'none') {
+    sh6.style.display = 'none';
+  }
+  else {
+    sh6.style.display = 'block';
+  }
+}
+
+function effect7(){
+  const sh7 = document.querySelector('.sh7');
+  if(sh7.style.display !== 'none') {
+    sh7.style.display = 'none';
+  }
+  else {
+    sh7.style.display = 'block';
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function middle1() {
+  const btn1 = document.querySelector('.middle1');
+  if(btn1.style.display !== 'none') {
+    btn1.style.display = 'none';
+  }
+  else {
+    btn1.style.display = 'block';
+  }
+}
+
+function middle2() {
+  const btn2 = document.querySelector('.middle2');
+  if(btn2.style.display !== 'none') {
+    btn2.style.display = 'none';
+  }
+  else {
+    btn2.style.display = 'block';
+  }
+}
+
+function middle3() {
+  const btn3 = document.querySelector('.middle3');
+  if(btn3.style.display !== 'none') {
+    btn3.style.display = 'none';
+  }
+  else {
+    btn3.style.display = 'block';
+  }
+}
+
+function middle4() {
+  const btn4 = document.querySelector('.middle4');
+  if(btn4.style.display !== 'none') {
+    btn4.style.display = 'none';
+  }
+  else {
+    btn4.style.display = 'block';
+  }
+}
+
+function middle5() {
+  const btn5 = document.querySelector('.middle5');
+  if(btn5.style.display !== 'none') {
+    btn5.style.display = 'none';
+  }
+  else {
+    btn5.style.display = 'block';
+  }
+}
+
+function middle6() {
+  const btn6 = document.querySelector('.middle6');
+  if(btn6.style.display !== 'none') {
+    btn6.style.display = 'none';
+  }
+  else {
+    btn6.style.display = 'block';
+  }
+}
+// next button functionsssssssdsdsdsds
+
+function end1() {
+  const end1 = document.querySelector('.end1');
+  if(end1.style.display !== 'none') {
+    end1.style.display = 'none';
+  }
+  else {
+    end1.style.display = 'block';
+  }
+}
+function end2() {
+  const end2 = document.querySelector('.end2');
+  if(end2.style.display !== 'none') {
+    end2.style.display = 'none';
+  }
+  else {
+    end2.style.display = 'block';
+  }
+}
+function end3() {
+  const end3 = document.querySelector('.end3');
+  if(end3.style.display !== 'none') {
+    end3.style.display = 'none';
+  }
+  else {
+    end3.style.display = 'block';
+  }
+}
+function end4() {
+  const end4 = document.querySelector('.end4');
+  if(end4.style.display !== 'none') {
+    end4.style.display = 'none';
+  }
+  else {
+    end4.style.display = 'block';
+  }
+}
+function end5() {
+  const end5 = document.querySelector('.end5');
+  if(end5.style.display !== 'none') {
+    end5.style.display = 'none';
+  }
+  else {
+    end5.style.display = 'block';
+  }
+}
+function end6() {
+  const end6 = document.querySelector('.end6');
+  if(end6.style.display !== 'none') {
+    end6.style.display = 'none';
+  }
+  else {
+    end6.style.display = 'block';
+  }
+}
+
+
+  </script>
+</body>
+</html>
